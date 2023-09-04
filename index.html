@@ -9,5 +9,41 @@
 		<link rel="manifest" href="/site.webmanifest">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="/w3Colors.css">
 	</head>
+	<body>
+		<header class="w3-bar w3-theme-d5 w3-hide-small">
+			<button class="w3-button w3-bar-item w3-theme-hover">Home</button>
+			<button class="w3-button w3-bar-item w3-theme-hover">Anders</button>
+			<button class="w3-button w3-bar-item w3-theme-hover">Oliver</button>
+			<button class="w3-button w3-bar-item w3-theme-hover">Dexter</button>
+			<button class="w3-button w3-bar-item w3-theme-hover">Silas</button>
+			<button class="w3-button w3-bar-item w3-theme-hover">Jude</button>
+			<script>
+				function calculateDamage() {
+					var strength = document.getElementById("strength").value;
+					alert(strength);
+				}
+			</script>
+		</header>
+		<form class="w3-container>
+			<p>
+				<label>Dice Roll</label>
+				<input class="w3-input" type="text" id="strength">
+			</p>
+			<p>
+				<label>Strength</label>
+				<input class="w3-input" type="text">
+			</p>
+			<p>
+				<label>Speed (Player)</label>
+				<input class="w3-input" type="text">
+			</p>
+			<p>
+				<label>Speed (Enemy)</label>
+				<input class="w3-input" type="text">
+			</p>
+			<button class="w3-button w3-round-xxlarge w3-black w3-theme-hover" onclick="calculateDamage()">Go!</button>
+		</form>
+	</body>
 </html>
