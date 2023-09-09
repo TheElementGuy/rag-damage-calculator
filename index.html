@@ -22,6 +22,9 @@
 			<script>
 				function calculateDamage() {
 					var strength = document.getElementById("strength");
+					var pspeed = document.getElementById("pspeed");
+					var espeed = document.getElementById("espeed");
+					var dice = document.getElementById("dice");
 					alert(strength.value);
 				}
 			</script>
@@ -29,19 +32,19 @@
 		<form class="w3-container">
 			<p>
 				<label>Dice Roll</label>
-				<input class="w3-input" type="text" id="strength">
+				<input class="w3-input" type="text" id="dice">
 			</p>
 			<p>
 				<label>Strength</label>
-				<input class="w3-input" type="text">
+				<input class="w3-input" type="text" id="strength">
 			</p>
 			<p>
 				<label>Speed (Player)</label>
-				<input class="w3-input" type="text">
+				<input class="w3-input" type="text" id="pspeed">
 			</p>
 			<p>
 				<label>Speed (Enemy)</label>
-				<input class="w3-input" type="text">
+				<input class="w3-input" type="text" id="espeed">
 			</p>
 			<button class="w3-button w3-round-xxlarge w3-black w3-theme-hover" onclick="calculateDamage()">Go!</button>
 		</form>
