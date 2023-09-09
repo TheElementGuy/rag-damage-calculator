@@ -25,7 +25,8 @@
 					var pspeed = document.getElementById("pspeed");
 					var espeed = document.getElementById("espeed");
 					var dice = document.getElementById("dice");
-					alert(strength.value);
+					var defense = document.getElementById("defense");
+					alert(dice.value*5*strength.value-(4*(espeed.value-pspeed-value))-defense.value);
 				}
 			</script>
 		</header>
@@ -41,6 +42,10 @@
 			<p>
 				<label>Speed (Player)</label>
 				<input class="w3-input" type="text" id="pspeed">
+			</p>
+			<p>
+				<label>Defense</label>
+				<input class="w3-input" type="text" id="defense">
 			</p>
 			<p>
 				<label>Speed (Enemy)</label>
