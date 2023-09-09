@@ -27,7 +27,8 @@
 					var dice = document.getElementById("dice");
 					var defense = document.getElementById("defense");
 					var attack = dice.value*5*strength.value-(4*(espeed.value-pspeed-value))-defense.value;
-					
+					var text = document.getElementById("text");
+					text.innerHTML = attack;
 				}
 			</script>
 		</header>
@@ -55,7 +56,7 @@
 			<button class="w3-button w3-round-xxlarge w3-black w3-theme-hover" onclick="calculateDamage()">Go!</button>
 		</form>
 		<div class="w3-container">
-			<p>Press go!</p>
+			<p id="text">Press go!</p>
 		</div>
 	</body>
 </html>
